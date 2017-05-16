@@ -1,0 +1,18 @@
+
+.wrapper_tab_content{
+	animation-name: opa;
+	animation-duration: 3s;
+
+}
+@-moz-keyframes opa {
+	from { 
+		opacity: 0;
+
+	 }
+	 50%{
+
+	 }
+	to { 
+		opacity: 1;
+	 }
+}
