@@ -1,0 +1,393 @@
+@import "bourbon"
+@import "_var.sass"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+h2
+	color: #000
+	font-size: 25px
+.homesect_app
+	.app
+		background-color: #DE6621
+		.app_phone
+			width: 199px
+			height: 365px
+			display: block
+			background-image: url(img/items2/phone_app.png)
+			background-repeat: no-repeat
+			top: 25px
+		.app_container
+			padding-top: 75px
+			left: 25px
+			.app_content
+				p
+					color: #fff
+					width: 375px
+					font-size: 20px
+					font-weight: bold
+					line-height: 28px
+			.app_button
+				margin-top: 35px
+				width: 245px
+				height: 88px
+				display: block
+				background-image: url(img/items2/app_button.png)
+				&:hover
+					opacity: 0.7
+					cursor: pointer
+					transition: 0.5s
+
+
+
+
+		&::after
+			content: ''
+			height: 6px
+			width: 100%
+			position: absolute
+			top: 365px
+			left: 0
+			background-image: url(img/bah_1.png)
+			display: block
+			z-index: 200
+			background-color: #DE6621
+
+.homesect
+	position: relative
+	background-color: #f9f9f9
+	.section-head
+		margin-bottom: 50px
+		p
+			margin-top: 60px
+			animation-delay: .2s
+			a
+				font-family: "RalewayBold", $helvetica
+				text-decoration: underline
+		h2
+			text-align: center
+			position: relative
+			color: #000
+			&::after
+				position: absolute
+				content: ''
+				height: 4px
+				background-color: $main-color
+				width: 165px
+				display: block
+				bottom: -30px
+				left: 50%
+				transform: translate(-50%, 0)
+		h3
+			text-align: center
+			color: #000
+			margin-top: 50px
+	.section-bottom
+		background-color: #e5e5e5
+		padding: 50px 0
+		text-align: center
+
+.new_test
+	background: #f9f9f9
+.container_for_image_but
+	cursor: pointer
+	display: inline-block
+	width: 100%
+	box-shadow: 0 0 400px #ccc
+
+.tab_content
+	height: 450px
+	width: 100%
+	.content_item
+		display: block
+		position: relative
+		width: 300px
+		left: 50px
+		top: 120px
+
+	.view_img
+		display: inline-block
+		background-repeat: no-repeat
+		height: 400px
+		width: 728px
+		position: relative
+		bottom: 170px
+		left: 370px
+.view_img_first
+	@extend .view_img
+	background-image: url(img/items/newbikeover.png)
+.view_img_second
+	@extend .view_img
+	background-image: url(img/items/newsedanover.png)
+.view_img_thirt
+	@extend .view_img
+	background-image: url(img/items/newjeepover.png)
+.view_img_fourth
+	@extend .view_img
+	background-image: url(img/items/newbussover.png)
+	margin-top: 20px
+.img_select
+	transition: .5s
+	background: #EFEFEF
+	border-bottom: 2px solid #EFEFEF
+	&:hover
+		background: #CDCDCD
+		border-bottom: 2px solid yellow
+	p
+		text-align: center
+
+.active
+	background: #D2D2D2
+	border-bottom: 2px solid orange
+	display: block
+	transition: 0s
+	font-weight: bold
+	&:first-child
+		background-image: url(img/items/newbike2.png)
+		background-repeat: no-repeat
+		background-position: 40px 0
+	&:nth-child(2)
+		background-image: url(img/items/newsedan2.png)
+		background-repeat: no-repeat
+		background-position: 40px 0
+	&:nth-child(3)
+		background-image: url(img/items/newjeep2.png)
+		background-repeat: no-repeat
+		background-position: 40px 0
+	&:last-child
+		background-image: url(img/items/newbuss2.png)
+		background-repeat: no-repeat
+		background-position: 40px 0
+.first 
+	a
+		background-image: url(img/items/newbike.png)
+		width: 204px
+		height: 120px
+		display: block
+		position: relative
+		left: 25px
+		&:hover
+			background-image: url(img/items/newbike2.png)
+.second 
+	a
+		background-image: url(img/items/newsedan.png)
+		width: 204px
+		height: 120px
+		display: block
+		position: relative
+		left: 25px
+		&:hover
+			background-image: url(img/items/newsedan2.png)
+
+.third 
+	a
+		background-image: url(img/items/newjeep.png)
+		width: 204px
+		height: 120px
+		display: block
+		position: relative
+		left: 25px
+		&:hover
+			background-image: url(img/items/newjeep2.png)
+
+.fourth 
+	a
+		background-image: url(img/items/newbuss3.png)
+		width: 204px
+		height: 120px
+		display: block
+		position: relative
+		left: 25px
+		&:hover
+			background-image: url(img/items/newbuss2.png)
+		
+
+
+.about_company
+	background-image: url(img/items2/bg-lightl-888.jpg)
+	background-size: cover
+	display: block
+	position: relative
+	top: -20px
+	padding-bottom: 50px
+	&::before
+		content: ''
+		height: 6px
+		width: 100%
+		position: absolute
+		top: 0px
+		left: 0
+		background-image: url(img/bah_3.png)
+		display: block
+		z-index: 200
+		background-color: #f9f9f9
+	&::after
+		content: ''
+		height: 6px
+		width: 100%
+		position: absolute
+		bottom: 0px
+		left: 0
+		background-image: url(img/bah_4.png)
+		display: block
+		z-index: 200
+		background-color: #fff
+
+.homesect2
+	width: 100%
+	height: 6px
+	background-image: url(img/items2/buh1.png)
+	display: block
+
+
+.company_title
+	text-align: center
+	top: -20px
+	display: block
+	position: relative
+	h2
+		color: #000
+		padding-top: 50px
+	.underline
+		width: 100px
+		height: 5px
+		background-color: $main-color
+		margin: 0 auto
+		margin-top: -15px
+
+
+.our_advantages
+	display: block
+	position: relative
+	margin: 25px -13px
+	padding: 20px 0
+
+	.advantages_our_park_img_first
+		width: 80px
+		height: 100px
+		display: block
+		background-image: url(img/items2/img2.png)
+		margin: 0 auto
+		background-repeat: no-repeat
+		position: relative
+		left: 5px
+	.advantages_our_park_img_second
+		width: 80px
+		height: 100px
+		display: block
+		background-image: url(img/items2/img3.png)
+		margin: 0 auto
+	.advantages_our_park_img_thirt
+		width: 80px
+		height: 100px
+		display: block
+		background-image: url(img/items2/img4.png)
+		margin: 0 auto
+
+
+	.advantages_our_park_content
+		min-height: 180px
+		strong
+			display: block
+			margin-top: 20px
+			font-size: 18px
+			color: #f8f8f8
+			font-family: $helvetica
+			color: #000
+		p
+			font-size: 13px
+			color: #f8f8f8
+			margin: 25px 25px
+			color: #000
+
+.inner_homesect3
+	background-color: #f9f9f9
+	top: -20px
+.trust_us
+	text-align: center	
+	h2
+		margin-top: 50px
+.underline
+	width: 100px
+	height: 5px
+	background-color: $main-color
+	margin: 0 auto
+	margin-top: -15px
+	margin-bottom: 	50px
+.trust_text
+	padding-bottom: 55px
+
+
+.about_company
+	background-image: url(img/items2/bg-lightl-888.jpg)
+	background-size: cover
+	display: block
+	position: relative
+	top: -20px
+	padding-bottom: 50px
+
+	.equipment_text
+		display: inline-block
+		color: #000
+		position: relative
+		top: 100px
+		width: 200px
+		right: 25px
+		
+
+	.left_equipment
+		background-image: url(img/items2/kran.png)
+		width: 180px
+		height: 100px
+		display: block
+		margin: 30px 0 30px 160px
+
+	.center_equipment
+		background-image: url(img/items2/kran2.png)
+		width: 180px
+		height: 100px
+		display: block
+		margin: 30px 0 30px 160px
+
+	.right_equipment
+		background-image: url(img/items2/kran3.png)
+		width: 180px
+		height: 100px
+		display: block
+		margin: 30px 0 30px 160px
+
+.order
+	background-color: #f9f9f9
+	top: -20px
+	padding-bottom: 	50px
+	.order_wrecker
+		h2
+			text-align: center
+			margin-top: 50px
+		.underline
+
+
+
+
+
+//ALWAYS END
+@import "_media.sass"
